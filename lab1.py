@@ -30,10 +30,10 @@ def kek(a1,a2,b1,b2):
             for k in range(x):
                 res[i][j] += matrix1[i][k] * matrix2[k][j]
 
-
 threads = []
 t2 =  time.time() # запуск таймера
 n = x//2
+
 t = Thread(target = kek, args=(0,n,0,n))
 threads.append(t)
 t.start()
